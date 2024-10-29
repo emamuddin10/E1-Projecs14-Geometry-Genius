@@ -17,7 +17,6 @@ function calculateParallelogramArea(){
   const height = getInputValue('parallelogram-height')
 
   const area = base*height
-  console.log(area)
 
   setParallelogramInnerText('parallelogram-output',area)
 

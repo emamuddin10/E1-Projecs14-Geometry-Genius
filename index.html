@@ -19,7 +19,7 @@
         <!-- main content container -->
         <div class="flex flex-col md:flex-row">
             <!-- shape card container -->
-            <div class="flex-1 grid grid-col-1 md:grid-col-2 lg:grid-cols-3">
+            <div class="flex-1 grid grid-col-1 md:grid-col-2 lg:grid-cols-3 gap-5">
                 <!-- traingle -->
                 <div class="card bg-base-100 w-96 shadow-xl text-center bg-pink-400 space-y-4">
                     <figure class="pt-3">
@@ -120,23 +120,25 @@
                     <div class="card-body">
                         <div class="space-y-4">
                             <h2 id="test" class="text-center text-3xl font-bold">Pentagon</h2>
-                            <p>Area (A) = 0.5 X b X h</p>
-                            <input class="w-24 text-2xl px-2 rounded-lg bg-slate-300" type="text" name="" id="triangle-base" placeholder="p">
+                            <p>Area (A) = 0.5 X p X </p>
+                            <!-- pentagon-perimeter -->
+                            <input class="w-24 text-2xl px-2 rounded-lg bg-slate-300" type="text" name="" id="pentagon-perimeter" placeholder="p">
                             <span>cm</span>
-                            <input class="w-24 text-2xl px-2 rounded-lg bg-slate-300" type="text" name="" id="triangle-height" placeholder="b">
+                        <!-- pentagon-apothem -->
+                            <input class="w-24 text-2xl px-2 rounded-lg bg-slate-300" type="text" name="" id="pentagon-apothem" placeholder="a">
                             <span>cm</span>
                         </div>
                         <div>
-                            <p>Area: <span id="triangle-area"></span><span>cm<sup>2</sup></span></p>
+                            <p>Area: <span id="pentagon-area"></span><span>cm<sup>2</sup></span></p>
                         </div>
 
                         <div class="card-actions justify-center">
-                            <button onclick="calculateTriangleArea()"  class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculatePentagonArea()"  class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- Ellipse -->
-                <div class="card bg-base-100 w-96 shadow-xl text-center   space-y-4">
+                <div class="card bg-base-100 w-96 shadow-xl text-center  bg-slate-700  space-y-4">
                     <figure class="pt-3">
                         <img src="./images/ellipse.png" alt="Shoes" />
                     </figure>
@@ -144,17 +146,17 @@
                         <div class="space-y-4">
                             <h2 id="test" class="text-center text-3xl font-bold">Perallelogram</h2>
                             <p>Area (A) = (Pi)ab</p>
-                            <input class="w-24 text-xl px-2 rounded-lg bg-slate-300" type="text" name="" id="rectangle-length" placeholder="length">
+                            <input class="w-24 text-xl px-2 rounded-lg bg-slate-300" type="text" name="" id="major-radius" placeholder="length">
                             <span>cm</span>
-                            <input class="w-24 text-xl px-2 rounded-lg bg-slate-300" type="text" name="" id="rectangle-width" placeholder="width">
+                            <input class="w-24 text-xl px-2 rounded-lg bg-slate-300" type="text" name="" id="minor-radius" placeholder="width">
                             <span>cm</span>
                         </div>
                         <div>
-                            <p>a=<span id="rectangle-l">0 </span><span>cm</span>, b=<span id="rectangle-w">0 </span>cm</p>
+                            <p>Area: <span id="ellipse-area"></span>cm</p>
                         </div>
 
                         <div class="card-actions justify-center">
-                            <button onclick="calculateRectangleArea()"  class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateEllipseArea()"  class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -171,6 +173,7 @@
     <script src="script/triangle-calculate.js"></script>
     <script src="script/ractangle-calculate.js"></script>
     <script src="script/perallelogram-calculate.js"></script>
+    <script src="script/pentagon-calculate.js"></script>
 </body>
 
 </html>
