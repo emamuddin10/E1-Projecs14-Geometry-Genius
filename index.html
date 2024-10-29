@@ -75,17 +75,17 @@
                         <div class="space-y-4">
                             <h2 id="test" class="text-center text-3xl font-bold">Perallelogram</h2>
                             <p>Area (A) = b X h</p>
-                            <input class="w-24 text-xl px-2 rounded-lg bg-slate-300" type="text" name="" id="rectangle-length" placeholder="length">
+                            <input class="w-24 text-xl px-2 rounded-lg bg-slate-300" type="text" name="" id="parallelogram-base" placeholder="base">
                             <span>cm</span>
-                            <input class="w-24 text-xl px-2 rounded-lg bg-slate-300" type="text" name="" id="rectangle-width" placeholder="width">
+                            <input class="w-24 text-xl px-2 rounded-lg bg-slate-300" type="text" name="" id="parallelogram-height" placeholder="height">
                             <span>cm</span>
                         </div>
                         <div>
-                            <p>b=<span id="rectangle-l">0 </span><span>cm</span>, h=<span id="rectangle-w">0 </span>cm</p>
+                            <p>Area: <span id="parallelogram-output"></span> <span>cm<sup>2</sup></span></p>
                         </div>
 
                         <div class="card-actions justify-center">
-                            <button onclick="calculateRectangleArea()"  class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateParallelogramArea()"  class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -170,6 +170,7 @@
 
     <script src="script/triangle-calculate.js"></script>
     <script src="script/ractangle-calculate.js"></script>
+    <script src="script/perallelogram-calculate.js"></script>
 </body>
 
 </html>
